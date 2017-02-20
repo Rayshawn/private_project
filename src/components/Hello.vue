@@ -26,7 +26,7 @@ import DraftQueryService from '../services/DraftQueryService'
 export default {
   name: 'hello',
   created () {
-    alert('开始请求')
+    // alert('开始请求')/\
     DraftQueryService
     .DraftLoseQuery('1235647891234567')
     .then(function (response) {
