@@ -10,6 +10,7 @@
     data () {
       document.title = '票据服务'
       return {
+        imgUrl: 'scr/assets/logo.png',
         itemsList: [{'img': '../../../assets/logo.png', title: 'demo1'},
                     {'img': '../../../assets/logo.png', title: 'demo1'},
                     {'img': '../../../assets/logo.png', title: 'demo1'},
@@ -20,6 +21,12 @@
       itemClick (index) {
         alert('点击>' + index)
       }
+    },
+    created () {
+      // alert('执行create')
+    },
+    ready () {
+      // alert('执行ready')
     }
   }
 </script>
